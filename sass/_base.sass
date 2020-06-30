@@ -1,0 +1,139 @@
+// Estilos generales
+
+// landing
+.landing
+  height: 100vh
+  margin: 0
+  padding: 0
+  color: $color-blanco
+  .fondo-azul
+    background-color: $color-azul-oscuro
+  .fondo-celeste
+    background-color: $color-celeste
+  .row
+    margin: initial
+  //animación de flechas
+  .demo
+    position: relative
+  #flecha .landing__link
+    display: inline-block
+    transform: rotate(-90deg)
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    span
+      position: absolute
+      top: 0
+      left: 50%
+      width: 24px
+      height: 24px
+      margin-left: -12px
+      margin-top: -24px
+      border-left: 2px solid $color-blanco
+      border-bottom: 2px solid $color-blanco
+      -webkit-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+      -webkit-animation: sdb07 2s infinite
+      animation: sdb07 2s infinite
+      opacity: 0
+      box-sizing: border-box
+      &:nth-of-type(1)
+        -webkit-animation-delay: 0s
+        animation-delay: 0s
+      &:nth-of-type(2)
+        top: 16px
+        -webkit-animation-delay: .15s
+        animation-delay: .15s
+      &:nth-of-type(3)
+        top: 32px
+        -webkit-animation-delay: .3s
+        animation-delay: .3s
+  @-webkit-keyframes sdb07
+    0%
+      opacity: 0
+
+    50%
+      opacity: 1
+
+    100%
+      opacity: 0
+  @keyframes sdb07
+    0%
+      opacity: 0
+
+    50%
+      opacity: 1
+
+    100%
+      opacity: 0
+
+// header
+.header
+  z-index: 100
+  position: fixed
+  .navbar
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+  a
+    text-decoration: initial
+    color: $color-azul-oscuro !important
+    font-family: $fuente-subtitulo
+    text-decoration: none
+  .menu
+    &__ul
+      align-items: center
+    &__boton
+      border: 1.5px solid $color-celeste
+      color: $color-azul-oscuro
+      &:focus
+        box-shadow: none
+  .navbar-toggler
+    border: none
+// headroom
+.headroom
+  will-change: transform
+  transition: transform 300ms linear
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 1000
+  &--pinned
+    transform: translateY(0%)
+  &--unpinned
+    transform: translateY(-56px)
+
+// about
+.mt-menu
+  margin-top: 56px
+.about
+  height: 100vh
+  .borde-verde
+    border-bottom: 3px solid $color-celeste
+  .experiencia
+    background-color: $color-azul
+    h2, div, p, h3
+      color: $color-blanco !important
+
+//proyectos
+.proyectos
+  .card
+    border: initial
+    border-radius: 0
+  &__texto
+    background-color: transparentize($color-azul-oscuro, .5)
+  &__titulo
+    color: $color-blanco
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      display: inline-block
+      bottom: -8px
+      left: 0
+      right: 0
+      height: 3px
+      background-color: $color-blanco

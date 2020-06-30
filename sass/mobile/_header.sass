@@ -1,0 +1,34 @@
+// header
+.collapse
+  display: block !important
+
+.menu
+  background-color: $color-verde-fondo
+  &__navbar
+    height: calc(100vh - 56px)
+    width: 70vw
+    position: fixed
+    right: 0
+    top: 56px
+    bottom: 0
+    display: flex
+    align-items: center
+    flex-direction: column
+  &__ul
+    height: 100%
+    justify-content: center
+  &__link
+    display: block
+    padding: 0.75rem 0
+    margin: 1rem 0
+    &:focus
+      text-transform: uppercase
+      color: $color-celeste !important
+  &__boton
+    margin: 1rem 0
+.navbar-nav
+  transform: translateX(70vw)
+  transition: .5s
+  &.show
+    transform: translateX(0)
+    background-color: $color-verde-fondo
