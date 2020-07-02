@@ -11247,9 +11247,6 @@ h3, h4, h5, h6 {
   border: initial;
   border-radius: 0;
 }
-.proyectos__texto {
-  background-color: rgba(26, 37, 65, 0.5);
-}
 .proyectos__titulo {
   color: #FFFFFF;
   position: relative;
@@ -11333,8 +11330,18 @@ h3, h4, h5, h6 {
 .proyectos__texto {
   opacity: 0;
   transition: 500ms;
+  background-color: rgba(26, 37, 65, 0.5);
+}
+.proyectos__titulo {
+  color: #FFFFFF;
 }
 .proyectos .carousel:hover + .proyectos__texto {
   opacity: 1;
+}
+.proyectos__texto:hover {
+  opacity: 1;
+}
+.proyectos .card-img {
+  border-radius: 0;
 }
 /*# sourceMappingURL=desktop.css.map */

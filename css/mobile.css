@@ -11247,9 +11247,6 @@ h3, h4, h5, h6 {
   border: initial;
   border-radius: 0;
 }
-.proyectos__texto {
-  background-color: rgba(26, 37, 65, 0.5);
-}
 .proyectos__titulo {
   color: #FFFFFF;
   position: relative;
@@ -11282,6 +11279,12 @@ h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  transform: translateX(70vw);
+  transition: 0.5s;
+}
+.menu__navbar.show {
+  transform: translateX(0);
+  background-color: #e7f5f4;
 }
 .menu__ul {
   height: 100%;
@@ -11298,15 +11301,6 @@ h3, h4, h5, h6 {
 }
 .menu__boton {
   margin: 1rem 0;
-}
-
-.navbar-nav {
-  transform: translateX(70vw);
-  transition: 0.5s;
-}
-.navbar-nav.show {
-  transform: translateX(0);
-  background-color: #e7f5f4;
 }
 
 .landing .logotipo {
@@ -11331,11 +11325,20 @@ h3, h4, h5, h6 {
   margin: 0.5rem 0 0 0.5rem;
 }
 
+.proyectos__texto {
+  background-color: #3A506B;
+}
 .proyectos__titulo {
   font-size: 1rem;
   text-transform: uppercase;
 }
 .proyectos__descripcion {
   font-size: 0.8rem;
+}
+.proyectos .card-img {
+  border-radius: 0;
+}
+.proyectos .card-img-overlay {
+  position: initial;
 }
 /*# sourceMappingURL=mobile.css.map */

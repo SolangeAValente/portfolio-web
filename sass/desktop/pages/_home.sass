@@ -23,5 +23,12 @@
   &__texto
     opacity: 0
     transition: 500ms
+    background-color: transparentize($color-azul-oscuro, .5)
+  &__titulo
+    color: $color-blanco
   .carousel:hover + .proyectos__texto
     opacity: 1
+  &__texto:hover
+    opacity: 1
+  .card-img
+    border-radius: 0
