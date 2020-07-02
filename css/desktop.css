@@ -11200,7 +11200,8 @@ h3, h4, h5, h6 {
   align-items: center;
 }
 .header .menu__boton {
-  border: 1.5px solid #5798b7;
+  border: 2px solid #5798b7;
+  border-radius: 0;
   color: #1a2541;
 }
 .header .menu__boton:focus {
@@ -11330,7 +11331,7 @@ h3, h4, h5, h6 {
 .proyectos__texto {
   opacity: 0;
   transition: 500ms;
-  background-color: rgba(26, 37, 65, 0.5);
+  background-color: rgba(26, 37, 65, 0.7);
 }
 .proyectos__titulo {
   color: #FFFFFF;
